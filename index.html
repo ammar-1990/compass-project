@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compass fitness</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <p>fitness <span>compass</span></p>
+      </header>
+      <div class="form">
+        <input id="inValue" type="text" placeholder="enter your recipe" />
+        <a href="#" id="btn">search</a>
+      </div>
+
+      <!-- start advanced search -->
+      <div class="advanced-search">
+        <div class="lable open-mega">advanced search</div>
+      
+
+        <div class="mega-menue hide-mega">
+          <div class="intolerances">
+            <p>intolerances</p>
+            <ul class="intolerances-list">
+              <li data-intolerances="none" class="none">None</li>
+              <li data-intolerances="&intolerances=Dairy">Dairy</li>
+              <li data-intolerances="&intolerances=Egg">Egg</li>
+              <li data-intolerances="&intolerances=Gluten">Gluten</li>
+              <li data-intolerances="&intolerances=Grain">Grain</li>
+              <li data-intolerances="&intolerances=Peanut">Peanut</li>
+              <li data-intolerances="&intolerances=Seafood">Seafood</li>
+              <li data-intolerances="&intolerances=Sesame">Sesame</li>
+              <li data-intolerances="&intolerances=Shellfish">Shellfish</li>
+              <li data-intolerances="&intolerances=Soy">Soy</li>
+              <li data-intolerances="&intolerances=Sulfite">Sulfite</li>
+              <li data-intolerances="&intolerances=Tree Nut">Tree Nut</li>
+              <li data-intolerances="&intolerances=Wheat">Wheat</li>
+             
+            </ul>
+          </div>
+          <div class="diet">
+            <p>diet</p>
+            <ul class="diet-list">
+              <li class="none" data-diet="none">None</li>
+              <li data-diet="&diet=Gluten Free">Gluten Free</li>
+              <li data-diet="&diet=Ketogenic">Ketogenic</li>
+              <li data-diet="&diet=Vegetarian">Vegetarian</li>
+              <li data-diet="&diet=Lacto-Vegetarian">Lacto-Vegetarian</li>
+              <li data-diet="&diet=Ovo-Vegetarian">Ovo-Vegetarian</li>
+              <li data-diet="&diet=Vegan">Vegan</li>
+              <li data-diet="&diet=Pescetarian">Pescetarian</li>
+              <li data-diet="&diet=Paleo">Paleo</li>
+              <li data-diet="&diet=Primal">Primal</li>
+              <li data-diet="&diet=Low FODMAP">Low FODMAP</li>
+              <li data-diet="&diet=Whole30">Whole30</li>
+              
+            </ul>
+          </div>
+          <div class="cuisine">
+            <p>cuisine</p>
+            <ul class="cuisine-list">
+              <li data-cuisine="none" class="none">None</li>
+              <li data-cuisine="&cuisine=American">American</li>
+              <li data-cuisine="&cuisine=British">British</li>
+              <li data-cuisine="&cuisine=Chinese">Chinese</li>
+              <li data-cuisine="&cuisine=African">African</li>
+              <li data-cuisine="&cuisine=French">French</li>
+              <li data-cuisine="&cuisine=German">German</li>
+              <li data-cuisine="&cuisine=Greek">Greek</li>
+              <li data-cuisine="&cuisine=Indian">Indian</li>
+              <li data-cuisine="&cuisine=Italian">Italian</li>
+              <li data-cuisine="&cuisine=Korean">Korean</li>
+              <li data-cuisine="&cuisine=African">Mediterranean</li>
+              <li data-cuisine="&cuisine=Mexican">Mexican</li>
+              <li data-cuisine="&cuisine=Middle Eastern">Middle Eastern</li>
+              <li data-cuisine="&cuisine=Nordic">Nordic</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+     
+      <div class="layer"></div>
+    </main>
+    <div class="results">
+      <p id="result">the results</p>
+      <div class="wraper"></div>
+    </div>
+
+    <div class="extend hide">
+      <div class="extention">
+        <div class="facts"></div>
+        <div class="ings">
+          <p>ingredients</p>
+          <div class="ing-wraper"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="calc hide-calc">
+        <span class="logo"><i class="fa fa-calculator" aria-hidden="true"></i></span>
+        <h1>Calories calculator</h1>
+      <input id="weight" type="number" placeholder="your weight in KG"/>
+      <input id="height" type="number" placeholder="your height in cm" />
+      <input id="age" type="number" placeholder="your age" />
+      <p>choose your activity level</p>
+      <ul class="activity">
+
+        
+        <li data-act="1.2" data-ex="little or no exercise, desk job" class="active-list">
+          Sedentary <span></span>
+        </li>
+        <li   data-act="1.375" data-ex="light exercise /sports 1-3 days /week">
+          Lightly active <span></span>
+        </li>
+        <li data-act="1.55" data-ex="moderate exercise /sports 6-7 days">
+          Moderately active <span></span>
+        </li>
+        <li data-act="1.725" data-ex="hard exercise every day, or 2 xs/day">
+          Very active <span></span>
+        </li>
+        <li data-act="1.9" data-ex="hard exercise 2 or more times per day">
+          Extra active <span></span>
+        </li>
+      </ul>
+      <div class="gender">
+        <span>choose youre gender</span>
+        <div class="choice"><span data-choice="male" class="active-choice">Male</span><span data-choice="female">Female</span></div>
+      </div>
+      
+     
+      <div class="result-wraper">
+      
+    </div>
+    <button id="calc" >calculate</button>
+  </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
