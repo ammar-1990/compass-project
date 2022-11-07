@@ -12,9 +12,10 @@ we can filter by  a type of a diet ,  according to our intolerances , or accordi
 
 the results would be shown in cards with the ability to show more information for each card.
 
-the see more illustrates the nutritious facts of the choosen recipe with the  its ingredients .
+the see more botton illustrates the nutritious facts of the choosen recipe with the  its ingredients .
 
-at the top right of the scrren we see a calculater symbol which opens a side bar that contains calories  calculator.
+at the top right of the screen we see a calculater symbol which opens a side bar that contains calories  calculator.
+
 by entiring the  informations in the calcolator form , we could know the appropreate amount of calories that suits as daily
 
 
